@@ -24,4 +24,15 @@ export class AppComponent {
      }
     }
   }
+
+  todoSubmit(value:any) {
+    // tslint:disable-next-line:no-non-null-assertion
+    if (value ! === '') {
+   this.todoArray.push(value.todo);
+    // this.todoForm.reset()
+   } else {
+     alert('Field required **');
+
  }
+ }
+}

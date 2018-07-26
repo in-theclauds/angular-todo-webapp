@@ -2,7 +2,7 @@
 <div style="text-align:center">
   
   <div class="container">
-    <form>
+    <form #todoForm= "ngForm" (ngSubmit)="todoSubmit(todoForm.value); todoForm.resetForm()">
       
      <div class="form-group">
      <h2 class="text-center text-primary">What tasks do we need to complete today?</h2>
